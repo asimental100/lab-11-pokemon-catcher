@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Pokemon Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>The Pokemon Catcher Game</h1>
+    </header>
+
+    <main>
+        <div id="total-caught-div">You Have Caught <span id="total-caught-number"></span> Pokemon.</div>
+        <div>Please Select the Image of one Pokemon then Click the Submit Button.</div>
+        <section id="random-pokemon-section">
+            <ul>
+                <li><input type="radio" id="random-pokemon-1" img="" name="pokemon"><label for="random-pokemon-1">random-pokemon-1</label></li>
+                <li><input type="radio" id="random-pokemon-2" img="" name="pokemon"><label for="random-pokemon-2">random-pokemon-2</label></li>
+                <li><input type="radio" id="random-pokemon-3" img="" name="pokemon"><label for="random-pokemon-3">random-pokemon-3</label></li>
+            </ul>
+            <button id="submit-button">Submit</button>
+            <button id="results-button">See Results</button>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

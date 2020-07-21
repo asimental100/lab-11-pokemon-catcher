@@ -1,20 +1,15 @@
 // import functions and grab DOM elements
 import pokemon from './pokemon.js';
-import { randomID } from './utils.js';
-
-const pokemonButton1 = document.getElementById('random-pokemon-1');
-const pokemonButton2 = document.getElementById('random-pokemon-2');
-const pokemonButton3 = document.getElementById('random-pokemon-3');
+import { renderPokemon } from './utils.js';
 
 const submitButton = document.getElementById('submit-button');
 const resultsButton = document.getElementById('results-button');
 
 let totalCaughtSpan = document.getElementById('total-caught-number');
+
+const pokemonSection = document.getElementById('pokemon-selection-section');
 // initialize state
 let totalCaught = 0;
-
-let catchCounter = 0;
-let encounterCounter = 0;
 
 totalCaughtSpan.textContent = totalCaught;
 // set event listeners to update state and DOM
@@ -36,3 +31,9 @@ resultsButton.addEventListener('click', () => {
     resultsButton.style.display = 'none';
     submitButton.style.display = '';
 });
+
+for (let i = 0; i < pokemon.length; i++) {
+    const poke = pokemon[i];
+    const el = renderPokemon(poke);
+    pokemonSection.appendChild(el);
+}

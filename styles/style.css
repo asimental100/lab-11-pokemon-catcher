@@ -6,9 +6,6 @@ ul li {
     display: inline-block;
 }
 
-#submit-button {
-}
-
 #results-button {
     display: none;
 }

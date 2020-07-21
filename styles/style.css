@@ -9,3 +9,15 @@ ul li {
 #results-button {
     display: none;
 }
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+span {
+    display: block;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+

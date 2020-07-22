@@ -27,6 +27,10 @@ input {
     visibility: collapse;
 }
 
-input:checked + img {
-    border: solid 10px white;
+li input:checked + img {
+    border-bottom: red solid;
+}
+
+#caught-span {
+    display: none;
 }

@@ -2,7 +2,7 @@ import pokemon from './pokemon.js';
 import { randomID } from './utils.js';
 import { renderPokemon } from './renderPokemon.js';
 
-const pokemonList = document.getElementById('pokemon-list');
+// const pokemonList = document.getElementById('pokemon-list');
 
 let randomNumberArray = randomID();
 

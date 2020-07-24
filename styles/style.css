@@ -5,12 +5,23 @@ body {
     cursor: pointer;
 }
 
-ul li {
+#results-button {
+    display: none;
+}
+
+label {
     display: inline-block;
 }
 
-#results-button {
-    display: none;
+label div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
 }
 
 img {
@@ -23,14 +34,6 @@ p {
     font-weight: bold;
 }
 
-input {
-    visibility: collapse;
-}
-
-li input:checked + img {
+input:checked + img {
     border-bottom: red solid;
-}
-
-#caught-span {
-    display: none;
 }

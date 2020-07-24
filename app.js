@@ -1,8 +1,10 @@
 import pokemon from './pokemon.js';
-import { randomID } from './utils.js';
+import { randomID, makeUser } from './utils.js';
 import { renderPokemon } from './renderPokemon.js';
 
-// const pokemonList = document.getElementById('pokemon-list');
+const pokemonSection = document.getElementById('random-pokemon-section');
+
+makeUser();
 
 let randomNumberArray = randomID();
 
@@ -14,4 +16,6 @@ let pokemon1 = pokemon[num1];
 let pokemon2 = pokemon[num2];
 let pokemon3 = pokemon[num3];
 
-renderPokemon(pokemon1, pokemon2, pokemon3);
+const randomPoke = renderPokemon(pokemon1, pokemon2, pokemon3);
+
+pokemonSection.append(randomPoke);
